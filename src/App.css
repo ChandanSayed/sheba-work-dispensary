@@ -1,0 +1,153 @@
+:root {
+  --gap: 40px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+.container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.secondary-color {
+  color: rgb(248, 53, 53);
+}
+.justify-between {
+  justify-content: space-between;
+}
+
+.logo-time-section {
+  margin-bottom: 32px;
+}
+.left-logo img {
+  width: 100%;
+  max-width: 140px;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+}
+
+table,
+tr,
+td,
+th {
+  border-collapse: collapse;
+  border: 2px solid #000;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  margin-left: -2px;
+  margin-right: -2px;
+}
+
+ul li {
+  border-bottom: 2px solid #000;
+  border-collapse: collapse;
+  min-height: 41.6px;
+  padding: 8px 16px;
+}
+ul li:last-child {
+  border-bottom: none;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+.w-50 {
+  width: 100%;
+}
+.notice-section {
+  border: 2px solid #000;
+  margin-bottom: 30px;
+}
+.own-work-section {
+  padding: 16px;
+  border-top: #000 2px solid;
+  border-bottom: #000 2px solid;
+}
+.own-work table {
+  margin-left: 60px;
+  width: calc(100% - 60px);
+}
+.n-b {
+  padding: 4px 16px;
+}
+p,
+td,
+th {
+  font-size: 20px;
+  line-height: 1.2;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 32px;
+}
+.swiper-pagination-bullet-active {
+  background-color: rgb(248, 53, 53);
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: rgb(248, 53, 53);
+}
+.pb-5 {
+  padding-bottom: 40px;
+}
+.shared-logos {
+  max-width: 100px;
+}
+.px-5 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.px-8 {
+  padding-left: 90px;
+  padding-right: 90px;
+}
+.px-5 .swiper-slide img {
+  display: block;
+  margin: auto;
+}
+.sheba-logo {
+  max-width: 140px;
+}
+@media (min-width: 992px) {
+  .w-50 {
+    width: calc(50% - (var(--gap) / 2));
+  }
+}
